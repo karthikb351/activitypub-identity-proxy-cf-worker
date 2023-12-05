@@ -1,19 +1,29 @@
 {
-  "extends": "./node_modules/gts/tsconfig-google.json",
-  "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "build",
-    "noEmit": true,
+	"extends": "./node_modules/gts/tsconfig-google.json",
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "build",
+		"noEmit": true,
 		"module": "esnext",
 		"target": "es2020",
-		"lib": ["es2020"],
+		"lib": [
+			"es2020"
+		],
 		"strict": true,
 		"alwaysStrict": true,
 		"preserveConstEnums": true,
 		"moduleResolution": "node",
 		"sourceMap": true,
-		"types": ["@cloudflare/workers-types"]
-  },
-	"include": ["src"],
-	"exclude": ["node_modules", "dist", "test"]
+		"types": [
+			"@cloudflare/workers-types"
+		]
+	},
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"test"
+	]
 }
